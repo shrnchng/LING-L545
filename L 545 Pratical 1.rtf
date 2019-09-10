@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14540\viewh10040\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 L545 Pratical 1\
+\
+$ gsed 's/[^a-zA-Z]\\+/\\n/g' < wiki.txt > practice.txt\
+$ grep '^[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]' practice.txt > consonants.txt | sort -d | uniq -c > output1.txt\
+\
+$ gsed 's/[aeiou].*//' consonants.txt\
+\
+\
+$ grep '[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]$' consonants.txt | uniq -c > output2.txt\
+\
+\
+\
+9/5\
+$ gsed 's/[^a-zA-Z]\\+/\\n/g' < wiki.txt > practice.txt\
+$ grep '^[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]' practice.txt > consonants.txt\
+$ gsed 's/[aeiouAEIUO].*//' consonants.txt > test.txt\
+$ sort -d test.txt | uniq -c > output1.txt\
+$ sort -nr < output1.txt > output1-2.txt\
+$ head output1-2.txt\
+385524 th\
+146611 c\
+142805 t\
+140815 w\
+140035 s\
+124242 m\
+120415 b\
+113760 f\
+103513 h\
+100011 d \
+\
+\
+\
+$ gsed 's/[^a-zA-Z]\\+/\\n/g' < wiki.txt > practice.txt\
+$ gsed 's/.*[aeiouAEIUO]//' practice.txt > test.txt\
+$ sort -d test.txt | uniq -c > output2.txt\
+$ sort -nr < output2.txt > output3.txt \
+$ head output3.txt\
+1926969 \
+724325 n\
+445531 s\
+299786 r\
+212396 t\
+147049 d\
+137663 l\
+66377 st\
+61851 nt\
+45217 nd}
