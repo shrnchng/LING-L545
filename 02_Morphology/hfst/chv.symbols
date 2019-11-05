@@ -1,0 +1,19 @@
+Multichar_Symbols
+
+%<n%>                ! Имя существительное, Noun
+%<pl%>               ! Множественное число, Plural
+
+%>                   ! Граница морфемы, Morpheme boundary
+
+%{A%}
+
+%<nom%>              ! Именительный падеж, Nominative
+%<ins%>              ! Творительный падеж, Instrumental
+%<gen%>
+
+%{Ă%}
+%{м%}
+%{ъ%}
+
+%<der_лӑх%>
+
